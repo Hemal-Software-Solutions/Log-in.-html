@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDatbase</title>
+    <script>
+        function login(){
+var user = document.loginform.user_name.value;
+var pass = document.loginform.pass_word.value;
+if(user == "" || pass == ""){
+alert("sorry...Please Enter Username and Password");
+}else{
+if((user == "HSSSH123" || user == "hsssh123") && pass == "123hss"){
+document.loginform.submit();
+}else{
+alert("Please Enter Correct Credentials");
+}
+}
+}
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <form name="loginform" action="iindex.html">
+
+        <input type="text" name="user_name" placeholder="Username"/>
+        <input type="password" name="pass_word" placeholder="Password"/>
+        <input type="button" value="login" onclick="login()"/>
+        </form>
+    </div>
+</body>
+</html>
